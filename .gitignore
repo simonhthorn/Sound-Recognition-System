@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Data (usually too large for git)
+data/
+datasets/
+*.csv
+*.json
+*.parquet
+*.h5
+*.hdf5
+
+# Model weights & checkpoints (large binary files)
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+checkpoints/
+runs/
+outputs/
+
+# Experiment tracking
+mlruns/
+wandb/
+lightning_logs/
+
+# Environment variables
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
