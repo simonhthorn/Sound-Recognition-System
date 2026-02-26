@@ -8,10 +8,10 @@ import numpy as np
 import pandas as pd
 
 class ESC50Dataset(Dataset):
-     def __init__(self, csv_path,audio_dir, folds):
+     def __init__(self, csv_path,audi_dir, folds):
           self.data = pd.read_csv(csv_path)
           self.data = self.data[self.data["fold"].isin(folds)]
-          self.audi_dir = audio_dir
+          self.audi_dir = audi_dir
 
      def __len__(self):
           return len(self.data)
@@ -19,7 +19,7 @@ class ESC50Dataset(Dataset):
      def __getitem__(self, idx):
           row = self.data.iloc[idx]
 
-          file_path = os.path.join(self.audio_dir, row["filename"])
+          file_path = os.path.join(self.audi_dir, row["filename"])
           label = row["target"]
 
           y, sr = librosa.load(file_path, sr=22050)
