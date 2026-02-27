@@ -1,0 +1,23 @@
+# EditorConfig - https://editorconfig.org
+root = true
+
+[*]
+# Standardinnstillinger for alle filer
+indent_style = space
+indent_size = 4
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.{js,json,yml,yaml,html,css}]
+# Web-relaterte filer bruker ofte 2 spaces
+indent_size = 2
+
+[*.md]
+# Markdown tillater mellomrom på slutten av linjer for linjeskift
+trim_trailing_whitespace = false
+
+[Makefile]
+# Makefiles krever Tabs for å fungere
+indent_style = tab
