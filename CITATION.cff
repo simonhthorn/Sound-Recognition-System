@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Hvis du bruker denne programvaren, vennligst siter den som vist nedenfor."
+authors:
+  - family-names: "[Etternavn]"
+    given-names: "[Fornavn]"
+    orcid: "https://orcid.org/0000-0000-0000-0000" # Valgfritt
+title: "[Prosjektnavn]"
+version: 0.1.0
+doi: 10.5281/zenodo.1234 # Valgfritt (hvis du har en DOI)
+date-released: 2024-05-22
+url: "https://github.com/[ditt-brukernavn]/[prosjekt-navn]"
